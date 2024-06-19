@@ -1,0 +1,4 @@
+Some things which are mssing in MAD project
+	- If image is taken with higher reso camera than have to downgrade
+	- If taken in rotated mode ,needs handling.
+	- Flower custom model
