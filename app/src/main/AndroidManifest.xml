@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+<<<<<<< HEAD
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
@@ -9,6 +10,10 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.CAMERA" />
+=======
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+>>>>>>> 02b0df2ec7d314afb43c78497ef7e2597868d1a5
 
     <application
         android:allowBackup="true"
@@ -20,6 +25,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ML"
         tools:targetApi="31">
+<<<<<<< HEAD
         <activity
             android:name=".ObjectDetection"
             android:exported="false" />
@@ -31,6 +37,18 @@
             android:name=".image.FaceDetection"
             android:exported="false" />
 
+=======
+
+        <activity
+            android:name=".helper.AudioHelperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".image.FaceDetection"
+            android:exported="false" />
+        <activity
+            android:name=".image.ObjectDetection"
+            android:exported="false" />
+>>>>>>> 02b0df2ec7d314afb43c78497ef7e2597868d1a5
         <activity
             android:name=".image.ImageClassification"
             android:exported="false" />
@@ -39,7 +57,11 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+<<<<<<< HEAD
             android:exported="true" >
+=======
+            android:exported="true">
+>>>>>>> 02b0df2ec7d314afb43c78497ef7e2597868d1a5
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,7 +69,10 @@
             </intent-filter>
         </activity>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 02b0df2ec7d314afb43c78497ef7e2597868d1a5
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.ml.fileprovider"

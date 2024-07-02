@@ -26,9 +26,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+<<<<<<< HEAD
     buildFeatures {
         mlModelBinding = true
     }
+=======
+>>>>>>> 02b0df2ec7d314afb43c78497ef7e2597868d1a5
 }
 
 dependencies {
@@ -45,8 +48,11 @@ dependencies {
     implementation("com.google.mlkit:object-detection:17.0.1")
     //face detection
     implementation("com.google.mlkit:face-detection:16.1.6")
+<<<<<<< HEAD
     implementation(libs.tensorflow.lite.support)
     implementation(libs.tensorflow.lite.metadata)
+=======
+>>>>>>> 02b0df2ec7d314afb43c78497ef7e2597868d1a5
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
