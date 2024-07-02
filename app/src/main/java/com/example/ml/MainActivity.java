@@ -1,8 +1,6 @@
 package com.example.ml;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,16 +11,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.ml.helper.AudioHelperActivity;
-import com.example.ml.helper.ImageHelperActivity;
 import com.example.ml.image.FaceDetection;
 import com.example.ml.image.FlowerClassification;
 import com.example.ml.image.ImageClassification;
-import com.example.ml.image.ObjectDetection;
+
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnImageClassification,btnFlowerClassification,btnObjectDetection,btnFaceDetection,btnAudioClassification;
+    Button btnImageClassification,btnFlowerClassification,btnObjectDetection,btnFaceDetection;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,12 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 changeToFaceDetection();
             }
         });
-        btnAudioClassification.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                changeToAudioClassification();
-            }
-        });
     }
 
     public void changeToImageClassifcation()
@@ -91,11 +81,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, FaceDetection.class);
         startActivity(i);
     }
-    public void changeToAudioClassification()
-    {
-        Intent i = new Intent(MainActivity.this, AudioHelperActivity.class);
-        startActivity(i);
-    }
+
     private void init()
     {
 
@@ -103,6 +89,6 @@ public class MainActivity extends AppCompatActivity {
         btnFlowerClassification= findViewById(R.id.btnFlowerClassfication);
         btnObjectDetection = findViewById(R.id.btnObjectDetction);
         btnFaceDetection = findViewById(R.id.btnFaceDetection);
-        btnAudioClassification = findViewById(R.id.btnAudioClassification);
+
     }
 }
